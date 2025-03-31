@@ -1,4 +1,4 @@
-$primary-color: #00acdc; 
+$primary-color: #00acdc;
 $link-color: #060b35;
 $hover-color: #34568b;
 
@@ -64,8 +64,6 @@ body {
       color: $primary-color;
     }
   }
-
-
 }
 
 .is-active {
@@ -118,7 +116,6 @@ body {
   padding: 50px 128px;
   justify-content: center;
 }
-
 
 .card {
   display: flex;
@@ -216,6 +213,18 @@ body {
 
 @media (max-width: 1024px) {
   .cards {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 488px) {
+  .cards {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
